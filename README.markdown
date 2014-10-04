@@ -61,7 +61,7 @@ Pass through data for a specified amount of time
 Example:
 
     $ tail -f access.log | run_for.py 10s | post_process.py
-
+    ($ tail -f <access log file, no response time needed> | run_for.py <amount of time> | post_process.py)
 bar_chart.py
 ------------
 
@@ -89,3 +89,7 @@ bar_chart.py also supports ingesting aggregated values. Simply provide a two col
     $ cat data | uniq -c | bar_chart.py --sort-keys --agg-values
 
 This is very convenient if you pull data out, say Hadoop or MySQL already aggregated.
+
+'''
+Test
+'''
